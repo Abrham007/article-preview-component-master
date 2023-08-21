@@ -60,7 +60,6 @@ h1 {
   display: block;
 }
 .profile__div {
-  background: url(../images/icon-share.svg) no-repeat 60% 45%/ 20px;
   background-color: hsl(210, 46%, 95%);
   float: right;
   height: 40px;

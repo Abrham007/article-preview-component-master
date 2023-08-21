@@ -6,5 +6,6 @@ shareButton.addEventListener("click", () => {
     shareButton.style.backgroundColor = "hsl(214, 17%, 51%)";
   } else {
     linkBubble.style.display = "none";
+    shareButton.style.backgroundColor = "hsl(210, 46%, 95%)";
   }
 });
