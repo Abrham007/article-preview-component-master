@@ -16,153 +16,10 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/style.css" />
 
     <title>Frontend Mentor | Article preview component</title>
   </head>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    :root {
-      --bold-color: hsl(217, 19%, 35%);
-      --light-color: hsl(214, 17%, 51%);
-    }
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      background-color: hsl(210, 46%, 95%);
-      font-family: "Manrope", sans-serif;
-    }
-    main {
-      position: relative;
-      background-color: white;
-      display: flex;
-      width: 800px;
-      height: 300px;
-      border-radius: 10px;
-      box-shadow: 10px 10px 30px 0px gainsboro;
-    }
-    .main__div-1 {
-      width: 40%;
-
-      overflow: hidden;
-      border-radius: 10px 0px 0px 10px;
-    }
-    .div-1__img {
-      height: 100%;
-    }
-
-    .main__div-2 {
-      width: 60%;
-      padding: 25px 40px;
-    }
-    .main__div-2 > * {
-      margin-bottom: 15px;
-    }
-    h1 {
-      font-size: 1.5rem;
-      margin-bottom: 10px;
-      color: var(--bold-color);
-    }
-    .div-2__p {
-      color: var(--light-color);
-      font-size: 0.9rem;
-      line-height: 1.6;
-    }
-    .div-2__profile {
-      padding: 10px 0px;
-    }
-    .div-2__profile::after {
-      content: " ";
-      clear: both;
-      display: block;
-    }
-    .profile__div {
-      background: url(./images/icon-share.svg) no-repeat 60% 45%/ 20px;
-      background-color: hsl(210, 46%, 95%);
-      float: right;
-      height: 40px;
-      width: 40px;
-      border-radius: 50%;
-    }
-    .profile__img {
-      border-radius: 50%;
-      float: left;
-      margin-right: 20px;
-    }
-    .profile__p-1 {
-      color: var(--bold-color);
-      font-weight: bold;
-    }
-    .profile__p-2 {
-      color: var(--light-color);
-    }
-    .link-bubble {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      position: absolute;
-      right: -90px;
-      top: 120px;
-      background-color: hsl(217, 19%, 35%);
-      width: 300px;
-      height: 70px;
-      border-radius: 15px;
-      padding: 0px 25px;
-      display: none;
-    }
-    .link-bubble::after {
-      content: "";
-      position: absolute;
-      top: 55px;
-      height: 25px;
-      width: 25px;
-      transform: rotate(45deg);
-      background-color: hsl(217, 19%, 35%);
-    }
-    .link-bubble__p {
-      letter-spacing: 5px;
-      color: hsl(212, 23%, 69%);
-    }
-    @media screen and (max-width: 850px) {
-      main {
-        flex-direction: column;
-        width: 330px;
-        height: 550px;
-      }
-
-      .main__div-1 {
-        width: 100%;
-
-        border-radius: 10px 10px 0px 0px;
-      }
-      .div-1__img {
-        height: auto;
-        width: 100%;
-      }
-
-      .main__div-2 {
-        width: 100%;
-        padding: 30px 30px 0px;
-        flex: 1;
-      }
-      .main__div-2 > * {
-        margin-bottom: 15px;
-      }
-      h1 {
-        font-size: 1rem;
-        line-height: 1.5;
-      }
-      p {
-        font-size: 0.9rem;
-        line-height: 1.6;
-      }
-    }
-  </style>
   <body>
     <main>
       <div class="main__div-1">
@@ -202,17 +59,6 @@
         />
       </div>
     </main>
-    <script>
-      var shareButton = document.querySelector(".profile__div");
-      var linkBubble = document.querySelector(".link-bubble");
-      shareButton.addEventListener("click", () => {
-        if (linkBubble.style.display === "none") {
-          linkBubble.style.display = "flex";
-          shareButton.style.backgroundColor = "hsl(214, 17%, 51%)";
-        } else {
-          linkBubble.style.display = "none";
-        }
-      });
-    </script>
+    <script src="./js/index.js"></script>
   </body>
 </html>
