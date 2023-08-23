@@ -65,6 +65,7 @@ h1 {
   height: 35px;
   width: 35px;
   border-radius: 50%;
+
 }
 svg {
   margin: 10px;
@@ -141,4 +142,27 @@ svg {
     font-size: 0.9rem;
     line-height: 1.6;
   }
+  .link-bubble {
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+    right: 0px;
+    top: calc(100% - 70px);
+    width: 100%;
+    border-radius: 0px 0px 10px 10px ;
+    display: none;
+  }
+  .link-bubble::after {
+    display: none;
+  }
+  .div-2__profile {
+    margin-top: 30px;
+    padding: 0px;
+  }
+  .profile__div {
+    position: relative;
+    top: 8px;
+    z-index: 1;
+  }
+
 }
